@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetoMental10s | Enlaces Oficiales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTILOS "MODO HACKER" --- */
+        :root {
+            --bg-color: #000000;
+            --accent-color: #FFD700; /* Amarillo Viral */
+            --text-color: #FFFFFF;
+            --button-bg: #1A1A1A;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Encabezado con Logo */
+        .header {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            object-fit: cover;
+            /* Aquí iría tu logo real */
+            background-image: url('../assets/images/logo_retomental10s.png'); 
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin: 15px 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p.bio {
+            font-size: 0.9rem;
+            color: #AAAAAA;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor de Botones */
+        .links-container {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Botones de Alta Conversión */
+        .link-btn {
+            background-color: var(--button-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            font-weight: 700;
+            text-align: center;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Icono izquierda, texto centro */
+            position: relative;
+        }
+
+        .link-btn:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+        }
+
+        /* Botón Destacado (El que más paga) */
+        .link-btn.featured {
+            background-color: var(--accent-color);
+            color: #000000;
+            border: none;
+            animation: pulse 2s infinite;
+        }
+
+        /* Iconos simples con emoji */
+        .icon { font-size: 1.2rem; }
+
+        /* Animación de latido para el botón principal */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+
+        .footer {
+            margin-top: auto;
+            margin-bottom: 20px;
+            font-size: 0.7rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="profile-pic"></div> 
+        <h1>Reto Mental 10s</h1>
+        <p class="bio">¿Pasaste la prueba? Demuéstralo 👇</p>
+    </div>
+
+    <div class="links-container">
+        
+        <a href="TU_LINK_DE_AFILIADO_AQUI" class="link-btn featured" target="_blank">
+            <span class="icon">🧠</span>
+            <span>TEST OFICIAL DE IQ (Certificado)</span>
+            <span class="icon">👉</span>
+        </a>
+
+        <a href="TU_LINK_AMAZON_AQUI" class="link-btn" target="_blank">
+            <span class="icon">📚</span>
+            <span>Libro: 1,000 Datos Curiosos</span>
+            <span class="icon">↗</span>
+        </a>
+
+        <a href="TU_LINK_APP_AQUI" class="link-btn" target="_blank">
+            <span class="icon">🎮</span>
+            <span>Entrena tu mente jugando gratis</span>
+            <span class="icon">⬇</span>
+        </a>
+
+        <a href="https://youtube.com/@RetoMental10s?sub_confirmation=1" class="link-btn" style="background: #cc0000; border: none;">
+            <span class="icon">📺</span>
+            <span>Suscríbete al Canal</span>
+            <span class="icon">🔔</span>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2024 RetoMental10s | Privacidad
+    </div>
+
+</body>
+</html>

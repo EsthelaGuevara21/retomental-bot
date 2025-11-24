@@ -1,0 +1,15 @@
+# Secretos de Google (¡NUNCA SUBIR ESTO!)
+client_secrets.json
+token.json
+
+# Entorno Virtual y Cache
+venv/
+__pycache__/
+*.pyc
+
+# Archivos Generados (Muy pesados para GitHub)
+output/
+assets/audio/temp.mp3
+
+# Archivos del sistema
+.DS_Store
